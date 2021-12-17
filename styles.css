@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&family=Roboto:wght@300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Roboto+Mono:wght@400;600&family=Roboto:wght@300;400&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+ul{
+    background-color: black;
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+nav{
+    position: sticky;
+    top: 0.1px;
+}
+
+li{
+    color: white;
+    text-decoration: none;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+li::after{
+    content: "";
+    display: block;
+    background: #fff;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .3s;
+}
+
+li:hover{
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}   
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    margin: 2rem;
+}
+
+.logo{
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background: url('https://cdn.smehost.net/acdccom-uscolumbiaprod/wp-content/uploads/2021/05/newsletter.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.logo > h1{
+    margin: 2%;
+    font-size: 750%;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: -4px -2px 15px rgba(255, 255, 255, 1);
+}
+
+.logo_acdc{
+    width: 80%;
+    margin: 5rem;
+}
+
+.logo > p{
+    margin: 2%;
+    color: white;
+    font-size: 2rem;
+    border-left: 4px solid red;
+    padding: 5px;
+}
+
+.target{
+    width: 60%;
+    padding: 2%;
+    margin: 5%;
+    border-left: 4px solid rgb(255, 50, 50);
+}
+
+.target > h1{
+    color: rgb(209, 94, 94);
+}
+
+.target > p{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.target-2{
+    width: 60%;
+    padding: 2%;
+    float: right;
+    margin: 5%;
+    border-right: 4px solid rgb(255, 50, 50);
+}
+
+.target-2 > h1{
+    color: rgb(209, 94, 94);
+}
+
+.target-2 > p{
+    font-family: 'Roboto Mono', monospace;
+}
+
+#title-song{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    color: rgba(34, 34, 34, 0.699);
+}
+
+#img_contend{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#img_acdc{
+    border-radius: 8px;
+    width: 50%;
+}
+
+#contenedor-padre{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.miembro{
+    width: 60%;
+    margin: 5%;
+    float: left;
+    padding: 5%;
+    background-color: white;
+    font-family: 'Roboto Mono', monospace;
+    box-shadow: 4px 4px 3px -2px rgba(0, 0, 0, 1);
+}
+
+footer > div{
+    height: 40vh;
+    background: black;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    flex-wrap: wrap;
+}
+
+footer > div > h2, h3{
+    color: #fff;
+}
+
+#info{
+    color: white;
+}
+
+#info_footer{
+    margin: 5rem;
+    width: 50%;
+}
+
+#info_footer > h2{
+    color: white;
+    font-size: 100%;
+    text-align: center;
+}
+
+#info_footer > h2 > a{
+    font-size: 1rem;
+}
+
+#redessociales{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
